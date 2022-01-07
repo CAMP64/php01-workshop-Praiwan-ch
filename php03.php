@@ -2,16 +2,27 @@
 <html>
 
 <head>
-    <title>HTML03</title>
+    <title>php03</title>
 </head>
 
 <body>
+    <?php 
+        $input = array("red","green","yellow","blue","pink","black","white");
+        echo "MyArray Value : ";
+        foreach($input as $value)
+        {
+            echo "$value ";
+        }
+        echo "<br> Expected Value : ";
+
+        
+        for($i=count($input)-1;$i>=0;$i--)
+        {
+            echo "$input[$i] ";
+        }
     
-    <a href="https://www.w3schools.com/">link ไป w3schools</a>
-    <br>
-    <a href="https://www.facebook.com/">link ไป facebook</a>
-    <br>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Buu-logo11.png" width="250" height="250" />
+    ?>
+    
     
 </body>
 

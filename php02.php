@@ -2,26 +2,17 @@
 <html>
 
 <head>
-    <title>HTML02</title>
+    <title>php02</title>
 </head>
 
 <body>
+    <?php
+        $word = 'Software Engineering';
+        $vowel = array("A" => "x", "a" => "x","E" => "x", "e" => "x","I" => "x", "i" => "x","O" => "x", "o" => "x","U" => "x", "u" => "x");
+        echo "String : " .$word ; echo "<br>";
+        echo "Expected Value : " .strtr($word,$vowel);
+    ?>
     
-    <b><font size="20">ขนาดอักษร 20px</font></b>
-    <br>
-    <font color=red> สีตัวอักษร เป็นสีแดง</font>
-    <br>
-    <font face="Tahamo"> ใช้ font Tahoma</font>
-    <br>
-    <b>ตัวอักษรหนา</b>
-    <br>
-    <i>ตัวอักษรเอียง</i>
-    <br>
-    <u>ขีดเส้นใต้ตัวอักษร</u>
-    <br>
-    <h3>ขนาดตัวอักษร h3</h3>
-    <h2>ขนาดตัวอักษร h2</h2>
-    <h1>ขนาดตัวอักษร h1</h1>
 </body>
 
 </html>

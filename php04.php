@@ -2,21 +2,24 @@
 <html>
 
 <head>
-    <title>HTML04</title>
+    <title>php04</title>
 </head>
 
 <body>
+    <?php
+        $word = 'Software Engineering';
+        echo "String : $word <br>";
+
+       
+        $count = array_count_values(str_split($word)); // str_split -> change to key || array_count_values -> count repeating 
+        arsort($count); // sort 
+        
+        echo 'Largest Chracter : ';
+        echo substr_count($word, array_keys($count)[0]); 
+        
+        echo '<br>For the Chracter : ' .array_keys($count)[0];
+    ?>
     
-    <table border = "1px" Width = 25% >
-        <tr >
-            <th>Month</th>
-            <th>Saving</th>
-        <tr align = left>
-            <th>January</th>
-            <th>$100</th>
-        <tr align = left>
-            <th>February</th>
-            <th>$50</th>
 </body>
 
 </html>

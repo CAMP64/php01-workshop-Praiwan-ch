@@ -2,14 +2,15 @@
 <html>
 
 <head>
-    <title>HTML01</title>
+    <title>php01</title>
 </head>
 
 <body>
+    <?php
+        date_default_timezone_set("Asia/Bangkok");
+        echo "Today is " .date("F d/m/Y");
+    ?>
     
-    <h1>My First heading</h1>
-    <hr/>
-    <p><b>My First Paragraph</b></p>
 </body>
 
 </html>
